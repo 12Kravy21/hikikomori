@@ -1,3 +1,7 @@
+<div class="to-top">
+  <span>↑ Наверх</span>
+</div>
+
 <div class="push"></div>
 
 <footer>

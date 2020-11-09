@@ -4,8 +4,11 @@ add_action('wp_enqueue_scripts', 'style_theme');
 add_action('after_setup_theme', 'theme_register_headerMenu');
 
 function scripts_theme() {
+  if (!is_page("121")){
   wp_enqueue_script('baseJS', get_template_directory_uri() . '/assets/js/header.js');
+  wp_enqueue_script('footerJS', get_template_directory_uri() . '/assets/js/footer.js');
   wp_enqueue_script('bodyJS', get_template_directory_uri() . '/assets/js/body.js');
+  }
 }
 
 global $template;

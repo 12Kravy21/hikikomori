@@ -39,7 +39,9 @@ submenu.forEach((item, i) => {
   })
 });
 
+// scroll top menu event
 window.onscroll = () =>{
+  const scrollElem = document.querySelector('.to-top');
   const header = document.querySelector('.header');
   const login = header.querySelector('.xoo-el-login-tgr');
   const registration = header.querySelector('.xoo-el-reg-tgr');
@@ -47,6 +49,8 @@ window.onscroll = () =>{
   const sync = document.querySelector('.syncContainer');
   const y = window.scrollY;
   if (y>235){
+    scrollElem.style.display = "block";
+    scrollElem.children[0].style.opacity = "1";
     header.classList.add('fixed');
     if (login != null && registration != null){
       login.classList.remove('deleteblock');
@@ -57,6 +61,8 @@ window.onscroll = () =>{
     }
     sync.classList.add('deleteblock');
   }  else if (y<220){
+    scrollElem.style.display = "none";
+    scrollElem.children[0].style.opacity = "0";
     header.classList.remove('fixed');
     if (login != null && registration != null){
     login.classList.add('deleteblock');

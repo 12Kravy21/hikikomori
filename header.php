@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/siteLogo.jpg" type="image/png">
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/siteLogo.png" type="image/png">
   <title>Hikikomori - Лучший сайт по аниме</title>
 
   <?php wp_head(); ?>
